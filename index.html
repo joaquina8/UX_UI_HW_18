@@ -13,15 +13,18 @@
     <div class="container">
        <nav>
          <img src="media/logo.png" class="logo">
-         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-         </ul>
+         <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
        </nav>  
        <div class="header-text">
-        <p>UI/UX Designer</p>
+        <p>UX/UI Designer</p>
         <h1>Hi, I'm <span>Joaquina</span><br>from Colorado</h1>
 
        </div>
@@ -36,7 +39,9 @@
         </div>
         <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam suscipit quae optio ut eaque accusamus, dolor sint, omnis ab ipsam delectus, id laudantium veritatis officia consectetur architecto labore molestiae. Deleniti.</p>
+            <p>My greatest passion in life is learning new things and learning them well. For the past 10 years I have self-taught myself how to build websites, HTML basics, SEO best practices, content writing and design, and I love creating things with Adobe products and Figma.
+                I realized I could bring my life experience into something tangible for others by creating beautiful web and content design that gives a voice to what people want to express, create products that work as an extension of human interaction, and that bring ease to the user experience by listening closely to what humans need to help make their life graceful.
+              </p>
 
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -46,8 +51,8 @@
             <div class="tab-contents active-tab" id="skills">
                 <ul>
                     <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                    <li><span>Web Development</span><br>Everything you need</li>
-                    <li><span>Content Design</span><br>Content designing</li>
+                    <li><span>Web Development</span><br>Wordpress Specialist</li>
+                    <li><span>Content Design</span><br>UI, Web, Email</li>
                 </ul>
             </div> 
             <div class="tab-contents" id="experience">
@@ -59,29 +64,29 @@
             </div>
             <div class="tab-contents" id="education">
                 <ul>
-                    <li><span>2013</span><br>Master of Science Traditional Chinese Medicine</li>
-                    <li><span>2023t</span><br>UX/UI Certification University of Denver</li>
+                    <li><span>2023</span><br>Certificate UX/UI Design University of Denver</li>
+                    <li><span>2013</span><br>Master of Science of Traditional Chinese Medicine</li>
                 </ul>
             </div>           
         </div>
        </div> 
     </div>
 </div>
-<!------------services--------------->
+<!------------skills-------------->
 
 <div id="services">
     <div class="container">
         <h1 class="sub-title">My Skills</h1>
         <div class="services-list">
             <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aliquid praesentium ullam porro obcaecati quaerat harum, expedita modi quo iste odio illo incidunt ab dolore laudantium, commodi mollitia similique sint!</p>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UX/UI Design</h2>
+                <p>UX research, IA, storyboarding, </p>
                 <a href="#">Learn more</a>
             </div>
             <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UX/UI Design</h2>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt aliquid praesentium ullam porro obcaecati quaerat harum, expedita modi quo iste odio illo incidunt ab dolore laudantium, commodi mollitia similique sint!</p>
                 <a href="#">Learn more</a>
             </div>
@@ -173,6 +178,16 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
 </script>
 
 
